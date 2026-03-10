@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOH — LinkedIn Strategy & Growth Blueprint 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0F0E0C;
+    --paper: #FAF7F2;
+    --gold: #B8973A;
+    --gold-light: #E8D89A;
+    --gold-pale: #F7F2E4;
+    --cream: #F2EDE3;
+    --stone: #8C8478;
+    --rule: #D4C9B0;
+    --white: #FFFFFF;
+    --red-accent: #8B2020;
+    --col-w: 980px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* ── MASTHEAD ── */
+  .masthead {
+    background: var(--ink);
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .masthead::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 39px,
+      rgba(184,151,58,0.06) 39px,
+      rgba(184,151,58,0.06) 40px
+    );
+  }
+  .masthead-inner {
+    max-width: var(--col-w);
+    margin: 0 auto;
+    padding: 64px 40px 56px;
+    position: relative;
+    z-index: 1;
+  }
+  .masthead-top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 36px;
+  }
+  .masthead-rule {
+    flex: 1;
+    height: 1px;
+    background: var(--gold);
+    opacity: 0.4;
+  }
+  .masthead-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 72px;
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1.0;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+  }
+  .masthead h1 span { color: var(--gold); }
+  .masthead-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.55);
+    font-style: italic;
+    margin-bottom: 40px;
+  }
+  .masthead-meta {
+    display: flex;
+    gap: 40px;
+    border-top: 1px solid rgba(184,151,58,0.25);
+    padding-top: 24px;
+  }
+  .masthead-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .meta-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+  .meta-value {
+    font-size: 13px;
+    color: rgba(255,255,255,0.7);
+    font-weight: 300;
+  }
+
+  /* ── NAV ── */
+  .nav-bar {
+    background: var(--cream);
+    border-bottom: 1px solid var(--rule);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .nav-inner {
+    max-width: var(--col-w);
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+  }
+  .nav-item {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--stone);
+    padding: 16px 20px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    transition: all 0.2s;
+    text-decoration: none;
+  }
+  .nav-item:hover, .nav-item.active {
+    color: var(--ink);
+    border-bottom-color: var(--gold);
+  }
+
+  /* ── LAYOUT ── */
+  .page-body {
+    max-width: var(--col-w);
+    margin: 0 auto;
+    padding: 0 40px 80px;
+  }
+
+  /* ── SECTION ── */
+  .section {
+    padding-top: 72px;
+  }
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    margin-bottom: 40px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .section-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--gold-light);
+    line-height: 1;
+    min-width: 60px;
+  }
+  .section-title-block { flex: 1; }
+  .section-kicker {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 4px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.2;
+  }
+
+  /* ── SUB-SECTION ── */
+  .subsection { margin-bottom: 48px; }
+  .subsection-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .subsection-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+  }
+
+  /* ── CALLOUT BOX ── */
+  .callout {
+    background: var(--ink);
+    color: var(--white);
+    padding: 32px 36px;
+    border-left: 4px solid var(--gold);
+    margin-bottom: 32px;
+    position: relative;
+    overflow: hidden;
+  }
+  .callout::before {
+    content: '"';
+    font-family: 'Playfair Display', serif;
+    font-size: 120px;
+    color: rgba(184,151,58,0.1);
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    line-height: 1;
+  }
+  .callout-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+  }
+  .callout-attr {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-top: 12px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ── GOLD CALLOUT ── */
+  .callout-gold {
+    background: var(--gold-pale);
+    border-left: 4px solid var(--gold);
+    padding: 24px 28px;
+    margin-bottom: 24px;
+  }
+  .callout-gold p {
+    font-size: 15px;
+    color: var(--ink);
+    line-height: 1.7;
+  }
+  .callout-gold strong { color: var(--red-accent); }
+
+  /* ── TABLE ── */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 32px;
+    font-size: 14px;
+  }
+  .data-table thead tr {
+    background: var(--ink);
+    color: var(--white);
+  }
+  .data-table thead th {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 14px 16px;
+    text-align: left;
+    font-weight: 500;
+  }
+  .data-table thead th:first-child { color: var(--gold); }
+  .data-table tbody tr { border-bottom: 1px solid var(--rule); }
+  .data-table tbody tr:nth-child(odd) { background: var(--cream); }
+  .data-table tbody tr:nth-child(even) { background: var(--white); }
+  .data-table tbody tr:hover { background: var(--gold-pale); }
+  .data-table td {
+    padding: 14px 16px;
+    vertical-align: top;
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  .data-table td:first-child {
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--ink);
+    min-width: 160px;
+  }
+  .tag {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 2px;
+  }
+  .tag-gold { background: var(--gold-pale); color: var(--gold); border: 1px solid var(--gold-light); }
+  .tag-red { background: #FFF0F0; color: var(--red-accent); border: 1px solid #F0C0C0; }
+  .tag-ink { background: var(--ink); color: var(--white); }
+  .tag-stone { background: var(--cream); color: var(--stone); border: 1px solid var(--rule); }
+
+  /* ── VERDICT BOX ── */
+  .verdict {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    margin-bottom: 32px;
+  }
+  .verdict-cell {
+    background: var(--white);
+    padding: 24px;
+  }
+  .verdict-cell.highlight { background: var(--gold-pale); }
+  .verdict-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+  .verdict-text {
+    font-size: 14px;
+    color: var(--ink);
+    line-height: 1.65;
+  }
+
+  /* ── PILL LIST ── */
+  .pill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  .pill {
+    background: var(--cream);
+    border: 1px solid var(--rule);
+    padding: 6px 14px;
+    font-size: 13px;
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .pill:hover { background: var(--gold-pale); border-color: var(--gold); }
+
+  /* ── POST CARDS ── */
+  .post-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .post-card {
+    background: var(--white);
+    border: 1px solid var(--rule);
+    padding: 24px;
+    position: relative;
+    transition: border-color 0.2s;
+  }
+  .post-card:hover { border-color: var(--gold); }
+  .post-card-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--gold-light);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .post-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .post-card-desc {
+    font-size: 13px;
+    color: var(--stone);
+    line-height: 1.6;
+  }
+  .post-card-tag {
+    margin-top: 12px;
+  }
+
+  /* ── PILLAR CARDS ── */
+  .pillar-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+  .pillar-card {
+    background: var(--ink);
+    color: var(--white);
+    padding: 24px 16px;
+    text-align: center;
+    position: relative;
+  }
+  .pillar-card::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: var(--gold);
+    margin: 12px auto 0;
+  }
+  .pillar-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 8px;
+  }
+  .pillar-name {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.4;
+  }
+
+  /* ── KEYWORD GRID ── */
+  .kw-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 32px;
+  }
+  .kw-col { }
+  .kw-col-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--gold-light);
+    margin-bottom: 12px;
+  }
+  .kw-item {
+    font-size: 13px;
+    color: var(--ink);
+    padding: 8px 0;
+    border-bottom: 1px solid var(--cream);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .kw-item::before {
+    content: '→';
+    color: var(--gold);
+    font-size: 11px;
+  }
+
+  /* ── PIVOT CARDS ── */
+  .pivot-list { display: flex; flex-direction: column; gap: 20px; margin-bottom: 32px; }
+  .pivot-card {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    border: 1px solid var(--rule);
+    background: var(--white);
+  }
+  .pivot-num-col {
+    background: var(--ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--gold);
+  }
+  .pivot-content { padding: 24px 28px; }
+  .pivot-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+  .pivot-desc { font-size: 14px; color: var(--stone); line-height: 1.65; }
+  .pivot-signal {
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .signal-box {
+    padding: 10px 12px;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 1.5;
+  }
+  .signal-before { background: #FFF0F0; color: var(--red-accent); border-left: 3px solid var(--red-accent); }
+  .signal-after { background: var(--gold-pale); color: #7A6020; border-left: 3px solid var(--gold); }
+
+  /* ── ABOUT REWRITE ── */
+  .about-block {
+    background: var(--white);
+    border: 2px solid var(--ink);
+    padding: 40px;
+    position: relative;
+    margin-bottom: 32px;
+  }
+  .about-block-label {
+    position: absolute;
+    top: -14px;
+    left: 32px;
+    background: var(--ink);
+    color: var(--gold);
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+  }
+  .about-lead {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .about-body { font-size: 15px; color: #333; line-height: 1.75; }
+  .about-body strong { color: var(--ink); }
+  .about-body em { color: var(--stone); }
+  .about-list {
+    margin: 16px 0;
+    padding: 0;
+    list-style: none;
+  }
+  .about-list li {
+    padding: 5px 0 5px 20px;
+    position: relative;
+    font-size: 14px;
+    color: #333;
+  }
+  .about-list li::before {
+    content: '·';
+    position: absolute;
+    left: 6px;
+    color: var(--gold);
+    font-size: 18px;
+    top: 2px;
+  }
+  .about-cta {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: 0.3px;
+  }
+
+  /* ── MAGAZINE SALES ── */
+  .sales-strategy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 32px;
+  }
+  .sales-card {
+    border: 1px solid var(--rule);
+    background: var(--white);
+    overflow: hidden;
+  }
+  .sales-card-header {
+    background: var(--ink);
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .sales-icon {
+    width: 32px;
+    height: 32px;
+    background: var(--gold);
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  .sales-card-title {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .sales-card-body { padding: 20px; }
+  .sales-card-body ul { list-style: none; padding: 0; }
+  .sales-card-body ul li {
+    font-size: 13px;
+    color: #444;
+    padding: 7px 0 7px 18px;
+    border-bottom: 1px solid var(--cream);
+    position: relative;
+    line-height: 1.5;
+  }
+  .sales-card-body ul li:last-child { border-bottom: none; }
+  .sales-card-body ul li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-size: 11px;
+    top: 9px;
+  }
+
+  /* ── FUNNEL ── */
+  .funnel {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 32px;
+  }
+  .funnel-step {
+    display: grid;
+    grid-template-columns: 140px 1fr 120px;
+    align-items: center;
+    background: var(--white);
+    border: 1px solid var(--rule);
+    transition: border-color 0.2s;
+  }
+  .funnel-step:hover { border-color: var(--gold); }
+  .funnel-stage {
+    background: var(--ink);
+    padding: 16px 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .funnel-stage-text {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    line-height: 1.4;
+  }
+  .funnel-desc {
+    padding: 16px 24px;
+    font-size: 13px;
+    color: #444;
+    line-height: 1.6;
+  }
+  .funnel-tactic {
+    padding: 16px;
+    background: var(--gold-pale);
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  /* ── ACTION MATRIX ── */
+  .matrix-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .matrix-col-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--white);
+    background: var(--ink);
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .matrix-col-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--gold);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .matrix-item {
+    background: var(--white);
+    border: 1px solid var(--rule);
+    padding: 16px 18px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: var(--ink);
+    line-height: 1.55;
+    border-left: 3px solid var(--rule);
+    transition: border-left-color 0.2s;
+  }
+  .matrix-item:hover { border-left-color: var(--gold); background: var(--gold-pale); }
+  .matrix-item strong { font-size: 12px; display: block; font-family: 'DM Mono', monospace; letter-spacing: 1px; color: var(--gold); margin-bottom: 4px; text-transform: uppercase; }
+
+  /* ── FOOTER ── */
+  .doc-footer {
+    background: var(--ink);
+    color: rgba(255,255,255,0.4);
+    padding: 32px 40px;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+  }
+  .doc-footer span { color: var(--gold); }
+
+  /* ── DIVIDER ── */
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 40px 0 32px;
+  }
+  .divider-line { flex: 1; height: 1px; background: var(--rule); }
+  .divider-icon {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: var(--gold);
+  }
+
+  /* ── UTILITY ── */
+  .intro-text {
+    font-size: 16px;
+    color: var(--stone);
+    line-height: 1.75;
+    max-width: 720px;
+    margin-bottom: 36px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .note {
+    font-size: 12px;
+    color: var(--stone);
+    font-style: italic;
+    margin-bottom: 16px;
+  }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 32px; }
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    margin-bottom: 40px;
+  }
+  .stat-box {
+    background: var(--white);
+    padding: 24px;
+    text-align: center;
+  }
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--ink);
+    line-height: 1;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .stat-num span { color: var(--gold); }
+  .stat-desc {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--stone);
+  }
+
+  @media (max-width: 700px) {
+    .masthead h1 { font-size: 40px; }
+    .post-grid, .pillar-grid, .kw-grid, .sales-strategy, .matrix-grid, .two-col { grid-template-columns: 1fr; }
+    .stat-row { grid-template-columns: 1fr 1fr; }
+    .page-body { padding: 0 20px 60px; }
+    .masthead-inner { padding: 40px 20px; }
+    .masthead-meta { flex-wrap: wrap; gap: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-top">
+      <div class="masthead-rule"></div>
+      <div class="masthead-label">Confidential Strategy Document</div>
+      <div class="masthead-rule"></div>
+    </div>
+    <h1>S<span>O</span>H</h1>
+    <div class="masthead-subtitle">Soul of Hospitality — LinkedIn & Magazine Growth Blueprint</div>
+    <div class="masthead-meta">
+      <div class="masthead-meta-item">
+        <span class="meta-label">Document Type</span>
+        <span class="meta-value">Full Strategic Audit + Action Plan</span>
+      </div>
+      <div class="masthead-meta-item">
+        <span class="meta-label">Prepared For</span>
+        <span class="meta-value">SOH Leadership</span>
+      </div>
+      <div class="masthead-meta-item">
+        <span class="meta-label">Edition</span>
+        <span class="meta-value">2026 · Confidential</span>
+      </div>
+      <div class="masthead-meta-item">
+        <span class="meta-label">Covers</span>
+        <span class="meta-value">Positioning · Content · SEO · Competitor · Magazine Sales</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- NAVIGATION -->
+<nav class="nav-bar">
+  <div class="nav-inner">
+    <a class="nav-item active" href="#part1">01 · Positioning</a>
+    <a class="nav-item" href="#part2">02 · Content</a>
+    <a class="nav-item" href="#part3">03 · SEO</a>
+    <a class="nav-item" href="#part4">04 · Competitor</a>
+    <a class="nav-item" href="#part5">05 · Magazine Sales</a>
+    <a class="nav-item" href="#summary">06 · Action Matrix</a>
+  </div>
+</nav>
+
+<main class="page-body">
+
+  <!-- INTRO STATS -->
+  <div class="section" style="padding-top: 48px;">
+    <div class="stat-row">
+      <div class="stat-box">
+        <span class="stat-num"><span>7</span></span>
+        <div class="stat-desc">Critical positioning gaps identified</div>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num"><span>5</span></span>
+        <div class="stat-desc">Strategic content pillars defined</div>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num"><span>10</span></span>
+        <div class="stat-desc">High-impact post ideas ready to use</div>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num"><span>3</span></span>
+        <div class="stat-desc">Competitor pivots to own your category</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- PART 1: UVP & POSITIONING              -->
+  <!-- ═══════════════════════════════════════ -->
+  <section id="part1" class="section">
+    <div class="section-header">
+      <div class="section-num">01</div>
+      <div class="section-title-block">
+        <div class="section-kicker">Strategic Audit</div>
+        <div class="section-title">UVP & Positioning — Current State Assessment</div>
+      </div>
+    </div>
+
+    <p class="intro-text">Your current About section describes what SOH is. It does not communicate what SOH does for its readers, partners, or the industry. The following audit maps every gap — and closes it.</p>
+
+    <div class="subsection">
+      <div class="subsection-title">Diagnostic Assessment — Current 'About' Section</div>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Diagnostic Dimension</th>
+            <th>Finding</th>
+            <th>Severity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>UVP clarity in first 3–4 lines</td>
+            <td>Absent. The opening does not immediately communicate what SOH uniquely delivers. It reads as a general description of a publication rather than a strategic value statement.</td>
+            <td><span class="tag tag-red">Critical</span></td>
+          </tr>
+          <tr>
+            <td>'What we do' vs 'results we deliver'</td>
+            <td>Heavily skewed toward 'what we do.' Phrases like 'covers latest news' describe activities, not outcomes. No mention of what the reader gains.</td>
+            <td><span class="tag tag-red">Critical</span></td>
+          </tr>
+          <tr>
+            <td>Who we serve — clarity</td>
+            <td>Vague. 'Hospitality professionals' is too broad. Decision-makers, investors, and operators are not called out by name.</td>
+            <td><span class="tag tag-gold">High</span></td>
+          </tr>
+          <tr>
+            <td>Core pain addressed</td>
+            <td>Not stated. There is no acknowledgment of the intelligence gap or decision deficit that SOH solves for its audience.</td>
+            <td><span class="tag tag-red">Critical</span></td>
+          </tr>
+          <tr>
+            <td>Transformation offered</td>
+            <td>Missing entirely. No before/after contrast, no articulation of how readers or partners are measurably better off after engaging with SOH.</td>
+            <td><span class="tag tag-red">Critical</span></td>
+          </tr>
+          <tr>
+            <td>Tone assessment</td>
+            <td>Generic. Could apply to any trade publication in any sector. Not authoritative, not differentiated, not premium in voice or positioning.</td>
+            <td><span class="tag tag-gold">High</span></td>
+          </tr>
+          <tr>
+            <td>Credibility signals present</td>
+            <td>Weak. Print circulation, South Asia exclusivity, cross-industry reach — none of these are mentioned. These are your strongest trust builders.</td>
+            <td><span class="tag tag-gold">High</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Rewritten 'About' Section — Ready to Publish</div>
+      <p class="note">Written to LinkedIn's 2,600-character limit. Framework applied: Hook → Audience → Pain → Transformation → Credibility → CTA.</p>
+
+      <div class="about-block">
+        <div class="about-block-label">Recommended LinkedIn About Section</div>
+        <div class="about-lead">Most hospitality and travel leaders make decisions with incomplete intelligence.</div>
+        <div class="about-body">
+          <p>They track news. They attend conferences. But the connective tissue — the layer that links global business foresight, cultural shifts, and on-ground guest behavior — is missing.</p>
+          <p style="margin-top:14px;"><strong>SOH — Soul of Hospitality fills that gap.</strong></p>
+          <p style="margin-top:14px;">We are South Asia's only dedicated business and culture publication for the hospitality, travel, and tourism sector — combining strategic market intelligence with deep editorial storytelling.</p>
+          <p style="margin-top:18px;"><strong>Our readers and partners include:</strong></p>
+          <ul class="about-list">
+            <li>Hoteliers, operators, and hospitality investors making capital decisions</li>
+            <li>CXOs and leadership teams shaping long-term brand strategy</li>
+            <li>Architects, designers, and experience creators building next-generation properties</li>
+            <li>Tourism policymakers, educators, and future industry talent</li>
+          </ul>
+          <p style="margin-top:18px;"><strong>What they gain from SOH:</strong></p>
+          <ul class="about-list">
+            <li>Decision intelligence — actionable insights that directly influence strategy and investment</li>
+            <li>Trend foresight — early signals on guest behavior, market shifts, and revenue opportunities</li>
+            <li>Competitive clarity — case studies and analysis that sharpen positioning and innovation</li>
+            <li>Peer credibility — exposure to elite voices, exclusive interviews, and industry research</li>
+          </ul>
+          <p style="margin-top:14px;">Every month, our print edition reaches decision-makers across South Asia. Our digital platform, events, and social channels extend that reach across the global hospitality ecosystem.</p>
+          <p style="margin-top:14px;"><strong>SOH is not just a magazine. It is the strategic layer your leadership team has been missing.</strong></p>
+          <div class="about-cta">Subscribe. Partner. Lead the conversation.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Mission & Vision — Sharpened for Public Use</div>
+      <div class="two-col">
+        <div>
+          <div class="callout-gold" style="margin-bottom:0;">
+            <p style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;">Mission</p>
+            <p><em>"To empower hospitality and travel leaders with the strategic intelligence, cultural foresight, and editorial depth they need to make decisions that shape the industry — not just follow it."</em></p>
+          </div>
+        </div>
+        <div>
+          <div class="callout-gold" style="margin-bottom:0;">
+            <p style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;">Vision</p>
+            <p><em>"To become the definitive intelligence platform for the hospitality and travel sector across South Asia and beyond — where business insight meets cultural depth, and every story moves the industry forward."</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- PART 2: CONTENT GAP ANALYSIS          -->
+  <!-- ═══════════════════════════════════════ -->
+  <section id="part2" class="section">
+    <div class="section-header">
+      <div class="section-num">02</div>
+      <div class="section-title-block">
+        <div class="section-kicker">Content Intelligence</div>
+        <div class="section-title">Content Gap Analysis — What's Missing & What to Build</div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Current Content Themes (Last 10 Posts)</div>
+      <div class="pill-list">
+        <div class="pill">Edition covers & announcements</div>
+        <div class="pill">Annual trend summaries</div>
+        <div class="pill">Leader feature previews</div>
+        <div class="pill">India travel landscape</div>
+        <div class="pill">Cultural-economic crossovers</div>
+        <div class="pill">Seasonal hospitality outlooks</div>
+      </div>
+
+      <div class="callout">
+        <div class="callout-text">You are building visibility. You are not yet building authority. These are two different outcomes — and only one of them attracts decision-makers.</div>
+        <div class="callout-attr">Core finding — Content Gap Audit</div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Authority vs. Visibility — Current Assessment</div>
+      <table class="data-table">
+        <thead>
+          <tr><th>Dimension</th><th>Assessment</th><th>Verdict</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Visibility content</td>
+            <td>High. Edition covers and trend roundups generate passive impressions and surface-level reach.</td>
+            <td><span class="tag tag-gold">Strong</span></td>
+          </tr>
+          <tr>
+            <td>Authority content</td>
+            <td>Low. No data-led analysis posts, no original POV on industry problems, no direct addressing of decision-maker challenges.</td>
+            <td><span class="tag tag-red">Weak</span></td>
+          </tr>
+          <tr>
+            <td>Thought leadership</td>
+            <td>Absent. SOH is promoting content it has created — not demonstrating the thinking behind it or taking a position.</td>
+            <td><span class="tag tag-red">Missing</span></td>
+          </tr>
+          <tr>
+            <td>Positioning signal</td>
+            <td>Posts currently say 'we cover hospitality' — not 'we understand what leaders need to know and we're telling you first.'</td>
+            <td><span class="tag tag-red">Critical gap</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Topics Your Audience is Searching For — Not In Your Feed</div>
+      <div class="post-grid">
+        <div style="background:var(--white);border:1px solid var(--rule);padding:20px;">
+          <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;color:var(--gold);margin-bottom:12px;text-transform:uppercase;">Missing Topics</div>
+          <ul style="list-style:none;padding:0;">
+            <li style="font-size:13px;padding:7px 0;border-bottom:1px solid var(--cream);color:#444;">▸ Investment & deal flow in Indian hospitality</li>
+            <li style="font-size:13px;padding:7px 0;border-bottom:1px solid var(--cream);color:#444;">▸ Revenue and ADR benchmarks — South Asia</li>
+            <li style="font-size:13px;padding:7px 0;border-bottom:1px solid var(--cream);color:#444;">▸ Technology adoption — AI, PMS, booking intelligence</li>
+            <li style="font-size:13px;padding:7px 0;border-bottom:1px solid var(--cream);color:#444;">▸ Policy and regulation — visa, GST, tourism budgets</li>
+            <li style="font-size:13px;padding:7px 0;color:#444;">▸ Talent & leadership in premium hospitality</li>
+          </ul>
+        </div>
+        <div style="background:var(--white);border:1px solid var(--rule);padding:20px;">
+          <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;color:var(--gold);margin-bottom:12px;text-transform:uppercase;">Also Missing</div>
+          <ul style="list-style:none;padding:0;">
+            <li style="font-size:13px;padding:7px 0;border-bottom:1px solid var(--cream);color:#444;">▸ Sustainability in practice — operational decisions</li>
+            <li style="font-size:13px;padding:7px 0;border-bottom:1px solid var(--cream);color:#444;">▸ F&B strategy — menu economics, chef partnerships</li>
+            <li style="font-size:13px;padding:7px 0;border-bottom:1px solid var(--cream);color:#444;">▸ Design and architecture driving occupancy</li>
+            <li style="font-size:13px;padding:7px 0;border-bottom:1px solid var(--cream);color:#444;">▸ Brand-building for hospitality companies</li>
+            <li style="font-size:13px;padding:7px 0;color:#444;">▸ India luxury positioning vs Southeast Asia</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Five Strategic Content Pillars</div>
+      <div class="pillar-grid">
+        <div class="pillar-card"><span class="pillar-num">I</span><div class="pillar-name">Intelligence Briefs</div></div>
+        <div class="pillar-card"><span class="pillar-num">II</span><div class="pillar-name">Decision-Maker Spotlight</div></div>
+        <div class="pillar-card"><span class="pillar-num">III</span><div class="pillar-name">Trend Signals</div></div>
+        <div class="pillar-card"><span class="pillar-num">IV</span><div class="pillar-name">Behind the Editorial</div></div>
+        <div class="pillar-card"><span class="pillar-num">V</span><div class="pillar-name">Proof & Social Validation</div></div>
+      </div>
+      <table class="data-table">
+        <thead>
+          <tr><th>Pillar</th><th>Strategic Purpose</th><th>Example Post Direction</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>I — Intelligence Briefs</td>
+            <td>Short, data-anchored posts summarizing a market shift or stat with SOH's editorial POV. Builds authority. Drives follows from decision-makers.</td>
+            <td>"India's luxury hotel ADR crossed ₹18,000 for the first time. Here is what is driving it — and what operators are getting wrong."</td>
+          </tr>
+          <tr>
+            <td>II — Decision-Maker Spotlight</td>
+            <td>Interview excerpts formatted for LinkedIn — pulling one commercial insight from a feature. Drives trust and network-quality followers.</td>
+            <td>"Federico González on why India will outpace Southeast Asia in luxury travel by 2028."</td>
+          </tr>
+          <tr>
+            <td>III — Trend Signals</td>
+            <td>Emerging shifts framed as forward intelligence, not news. Positions SOH as ahead of the curve, not reacting to it.</td>
+            <td>"Concert tourism is not a trend. It is a structural shift. What this means for hoteliers."</td>
+          </tr>
+          <tr>
+            <td>IV — Behind the Editorial</td>
+            <td>Transparent posts about why SOH covers what it covers. What problems the team is tracking. Builds community and editorial credibility.</td>
+            <td>"Why SOH chose this as its February cover story — and what question it's actually answering for operators."</td>
+          </tr>
+          <tr>
+            <td>V — Proof & Social Validation</td>
+            <td>Circulation milestones, partner logos, reader responses, reach stats — formatted as credibility proof, not self-promotion.</td>
+            <td>"12 months. X cities. X decision-makers reached. Here is what SOH's readership tells us about where the industry is heading."</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">10 High-Impact LinkedIn Post Ideas</div>
+      <div class="post-grid">
+        <div class="post-card">
+          <div class="post-card-num">01</div>
+          <div class="post-card-title">India's Concert Economy & Hotel Occupancy</div>
+          <div class="post-card-desc">Post a data snapshot: how concert-linked bookings impacted occupancy in 3 cities in 2025. Numbers only, one sharp observation. No fluff.</div>
+          <div class="post-card-tag"><span class="tag tag-gold">Intelligence Brief</span></div>
+        </div>
+        <div class="post-card">
+          <div class="post-card-num">02</div>
+          <div class="post-card-title">The Luxury Gap Nobody Is Talking About</div>
+          <div class="post-card-desc">India has the demand. India has the supply pipeline. What it lacks is the service consistency to justify five-star pricing. One paragraph, one sharp question.</div>
+          <div class="post-card-tag"><span class="tag tag-stone">Industry POV</span></div>
+        </div>
+        <div class="post-card">
+          <div class="post-card-num">03</div>
+          <div class="post-card-title">What Federico González Actually Said About India</div>
+          <div class="post-card-desc">Pull ONE commercially specific insight from the interview — not a quote about hospitality being about people. A business-grade observation leaders will share.</div>
+          <div class="post-card-tag"><span class="tag tag-gold">Decision-Maker Spotlight</span></div>
+        </div>
+        <div class="post-card">
+          <div class="post-card-num">04</div>
+          <div class="post-card-title">The 2026 Trend SOH Is Watching Closely</div>
+          <div class="post-card-desc">Pick the single trend from the Jan 2026 edition that matters most to owners and investors. Make it 150 words. No preamble. Immediate value.</div>
+          <div class="post-card-tag"><span class="tag tag-stone">Trend Signal</span></div>
+        </div>
+        <div class="post-card">
+          <div class="post-card-num">05</div>
+          <div class="post-card-title">Why SOH Chose This Cover Story</div>
+          <div class="post-card-desc">A 200-word editorial note: why a particular story was chosen, what problem it addresses, who needs to read it. Builds trust in the editorial process.</div>
+          <div class="post-card-tag"><span class="tag tag-ink">Behind the Editorial</span></div>
+        </div>
+        <div class="post-card">
+          <div class="post-card-num">06</div>
+          <div class="post-card-title">The Revenue Conversation Hotels Avoid</div>
+          <div class="post-card-desc">The disconnect between RevPAR targets and the experience investment required to justify premium positioning. Operators will forward this to their teams.</div>
+          <div class="post-card-tag"><span class="tag tag-stone">Industry Reality</span></div>
+        </div>
+        <div class="post-card">
+          <div class="post-card-num">07</div>
+          <div class="post-card-title">South Asia's Most Followed Hospitality Platform</div>
+          <div class="post-card-desc">Circulation numbers, reach, years of coverage — framed as a credibility milestone. This is the post that makes partners take the next step.</div>
+          <div class="post-card-tag"><span class="tag tag-gold">Proof Post</span></div>
+        </div>
+        <div class="post-card">
+          <div class="post-card-num">08</div>
+          <div class="post-card-title">Design That Drives Booking</div>
+          <div class="post-card-desc">Three South Asian hotels where architecture and interior decisions measurably impacted occupancy. Data-first. Brief. Relevant to designers, investors, and operators alike.</div>
+          <div class="post-card-tag"><span class="tag tag-stone">Trend Signal</span></div>
+        </div>
+        <div class="post-card">
+          <div class="post-card-num">09</div>
+          <div class="post-card-title">The Investor's Guide to India's Hospitality Cycle</div>
+          <div class="post-card-desc">What the signals say right now: ADR, new brand entrants, domestic demand vs. inbound. Written specifically for the investor and developer audience.</div>
+          <div class="post-card-tag"><span class="tag tag-gold">Intelligence Brief</span></div>
+        </div>
+        <div class="post-card">
+          <div class="post-card-num">10</div>
+          <div class="post-card-title">What the SOH Team Is Reading This Quarter</div>
+          <div class="post-card-desc">A curated list of the 5 global reports shaping SOH's 2026 editorial calendar. Builds intellectual credibility and signals depth beyond the magazine itself.</div>
+          <div class="post-card-tag"><span class="tag tag-ink">Behind the Editorial</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- PART 3: SEO                            -->
+  <!-- ═══════════════════════════════════════ -->
+  <section id="part3" class="section">
+    <div class="section-header">
+      <div class="section-num">03</div>
+      <div class="section-title-block">
+        <div class="section-kicker">Discoverability</div>
+        <div class="section-title">SEO & LinkedIn Search Optimization</div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Ten High-Intent B2B Keywords — Categorized</div>
+      <div class="kw-grid">
+        <div class="kw-col">
+          <div class="kw-col-label">Core Service Keywords</div>
+          <div class="kw-item">Hospitality trade magazine India</div>
+          <div class="kw-item">Travel and tourism publication South Asia</div>
+          <div class="kw-item">Hotel industry insights</div>
+        </div>
+        <div class="kw-col">
+          <div class="kw-col-label">Buyer Intent Keywords</div>
+          <div class="kw-item">Advertise in hospitality magazine India</div>
+          <div class="kw-item">B2B hospitality media partner</div>
+          <div class="kw-item">Hotel brand sponsorship media</div>
+        </div>
+        <div class="kw-col">
+          <div class="kw-col-label">Authority-Building Keywords</div>
+          <div class="kw-item">India hospitality industry trends 2026</div>
+          <div class="kw-item">Luxury travel market intelligence South Asia</div>
+          <div class="kw-item">Hotel investment insights India</div>
+          <div class="kw-item">Future of hospitality South Asia</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Where to Place Keywords — Section by Section</div>
+      <table class="data-table">
+        <thead>
+          <tr><th>LinkedIn Section</th><th>Recommended Integration</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Page Tagline</td>
+            <td>Use: <strong>"South Asia's Hospitality & Travel Intelligence Platform"</strong> — integrates core service + authority keywords naturally without sounding optimized.</td>
+          </tr>
+          <tr>
+            <td>About Section — Lines 1–3</td>
+            <td>Natural placement for: 'hospitality leaders,' 'travel intelligence,' 'South Asia,' 'business insights.' These must appear before the fold — the first 300 characters that show before the 'see more' cut-off.</td>
+          </tr>
+          <tr>
+            <td>About Section — Mid Body</td>
+            <td>Use: 'market intelligence,' 'hospitality investment,' 'luxury travel trends India' within outcome descriptions. Embed naturally, not as a list of keywords.</td>
+          </tr>
+          <tr>
+            <td>Specialties Field</td>
+            <td>List exactly: <em>Hospitality Intelligence · Travel & Tourism Media · Luxury Hospitality Trends · Hotel Industry Insights · B2B Hospitality Media · South Asia Tourism · Brand Partnerships · Market Research</em></td>
+          </tr>
+          <tr>
+            <td>Post Hashtags</td>
+            <td>Use consistently across all posts: <strong>#HospitalityIndia #TravelIntelligence #LuxuryTravel #HotelierInsights #SouthAsiaTourism</strong> — do not vary these. Consistency compounds into searchable clusters over time.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- PART 4: COMPETITOR ANALYSIS           -->
+  <!-- ═══════════════════════════════════════ -->
+  <section id="part4" class="section">
+    <div class="section-header">
+      <div class="section-num">04</div>
+      <div class="section-title-block">
+        <div class="section-kicker">Competitive Intelligence</div>
+        <div class="section-title">Competitor Positioning Analysis — SOH vs Hotelier India</div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Side-by-Side Comparison</div>
+      <table class="data-table">
+        <thead>
+          <tr><th>Dimension</th><th>Hotelier India</th><th>SOH — Current</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Opening Hook</td>
+            <td>Clear and direct. "Ultimate digital hub" — bold claim, immediately stated.</td>
+            <td style="background:var(--gold-pale);">Absent. No hook. First impression is descriptive, not compelling.</td>
+          </tr>
+          <tr>
+            <td>Who They Serve</td>
+            <td>Named: "hospitality, travel & tourism professionals."</td>
+            <td style="background:var(--gold-pale);">Implied, not named. Audience has to infer they are being spoken to.</td>
+          </tr>
+          <tr>
+            <td>Their 'Why'</td>
+            <td>"Keeps industry informed and inspired" — vague, but stated clearly.</td>
+            <td style="background:var(--gold-pale);">Not articulated at all. No reason given for SOH's existence beyond coverage.</td>
+          </tr>
+          <tr>
+            <td>Differentiation</td>
+            <td>Claims 'ultimate' status — bold though not substantiated.</td>
+            <td style="background:var(--gold-pale);">No differentiation statement present anywhere in the copy.</td>
+          </tr>
+          <tr>
+            <td>Trust Signals</td>
+            <td>Mentions depth of coverage and exclusive interviews.</td>
+            <td style="background:var(--gold-pale);">No credibility indicators. Print reach, regional exclusivity — all absent.</td>
+          </tr>
+          <tr>
+            <td>Tone</td>
+            <td>Credible, purposeful, reasonably tight.</td>
+            <td style="background:var(--gold-pale);">Descriptive, passive, generic. No editorial personality present.</td>
+          </tr>
+          <tr>
+            <td>Premium Positioning</td>
+            <td>Not attempted — positions as trade news hub.</td>
+            <td style="background:var(--gold-pale);">Not attempted either — despite the product being significantly more premium.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout-gold">
+        <p><strong>Verdict:</strong> Hotelier India wins on clarity — it states its audience and purpose directly, even if simply. SOH has a significantly stronger underlying product but currently a weaker LinkedIn presence. The opportunity for SOH is not to be a better version of Hotelier India — it is to occupy a fundamentally different category: <strong>strategic intelligence vs trade news.</strong></p>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Three Strategic Messaging Pivots</div>
+      <div class="pivot-list">
+        <div class="pivot-card">
+          <div class="pivot-num-col">1</div>
+          <div class="pivot-content">
+            <div class="pivot-title">From 'Magazine' to 'Intelligence Platform'</div>
+            <div class="pivot-desc">Stop positioning SOH as a publication. Position it as a platform where industry intelligence is produced, curated, and distributed across print, digital, and events. The word 'magazine' limits perception. The phrase 'intelligence platform' expands what SOH can charge for, partner with, and own.</div>
+            <div class="pivot-signal">
+              <div class="signal-box signal-before">Current: "We publish a magazine about hospitality."</div>
+              <div class="signal-box signal-after">Target: "We produce the intelligence layer that hospitality leaders rely on."</div>
+            </div>
+          </div>
+        </div>
+        <div class="pivot-card">
+          <div class="pivot-num-col">2</div>
+          <div class="pivot-content">
+            <div class="pivot-title">From 'Informed and Inspired' to 'Decided and Differentiated'</div>
+            <div class="pivot-desc">Hotelier India and most competitors stop at 'informing' their audience. SOH's competitive edge is outcome-specificity: readers don't just learn — they make better decisions. All future messaging should anchor to specific outcomes: revenue decisions, investment clarity, brand differentiation, talent strategy.</div>
+            <div class="pivot-signal">
+              <div class="signal-box signal-before">Current: "We keep the industry informed."</div>
+              <div class="signal-box signal-after">Target: "We give leaders the intelligence to decide first."</div>
+            </div>
+          </div>
+        </div>
+        <div class="pivot-card">
+          <div class="pivot-num-col">3</div>
+          <div class="pivot-content">
+            <div class="pivot-title">From 'South Asia Coverage' to 'South Asia's Authoritative Voice'</div>
+            <div class="pivot-desc">Coverage is a commodity. Authority is scarce. SOH should consistently claim the position of the definitive editorial authority for the region — not one of several publications covering it. This claim must be reinforced by original research, exclusive data, named industry relationships, and a consistent editorial POV on every post.</div>
+            <div class="pivot-signal">
+              <div class="signal-box signal-before">Current: "We cover South Asia's hospitality sector."</div>
+              <div class="signal-box signal-after">Target: "We define what South Asia's hospitality sector needs to know."</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- PART 5: MAGAZINE SALES STRATEGY       -->
+  <!-- ═══════════════════════════════════════ -->
+  <section id="part5" class="section">
+    <div class="section-header">
+      <div class="section-num">05</div>
+      <div class="section-title-block">
+        <div class="section-kicker">Revenue Strategy</div>
+        <div class="section-title">Magazine Sales — LinkedIn-Driven Growth Strategy</div>
+      </div>
+    </div>
+
+    <p class="intro-text">LinkedIn is your most valuable and most underused magazine sales channel. Your audience — decision-makers, investors, hoteliers — is already on the platform. The strategy below turns your LinkedIn presence into a direct subscription and distribution engine.</p>
+
+    <div class="subsection">
+      <div class="subsection-title">The Magazine Sales Funnel — From Follower to Subscriber</div>
+      <div class="funnel">
+        <div class="funnel-step">
+          <div class="funnel-stage"><div class="funnel-stage-text">Stage 1<br>Awareness</div></div>
+          <div class="funnel-desc"><strong>Authority content earns follows.</strong> Intelligence Briefs, Trend Signals, and POV posts attract the right audience — professionals who actually read and buy industry publications.</div>
+          <div class="funnel-tactic">Post 3×/week consistently</div>
+        </div>
+        <div class="funnel-step">
+          <div class="funnel-stage"><div class="funnel-stage-text">Stage 2<br>Interest</div></div>
+          <div class="funnel-desc"><strong>Editorial previews create demand.</strong> Share a single compelling insight, data point, or pull-quote from the upcoming issue. End with "Full analysis in the [Month] edition." This is content marketing as sales.</div>
+          <div class="funnel-tactic">1 preview post per edition</div>
+        </div>
+        <div class="funnel-step">
+          <div class="funnel-stage"><div class="funnel-stage-text">Stage 3<br>Consideration</div></div>
+          <div class="funnel-desc"><strong>Proof posts remove hesitation.</strong> Circulation numbers, who reads SOH, testimonials from industry leaders, brand names associated with the magazine — all of these lower the psychological barrier to subscribe.</div>
+          <div class="funnel-tactic">1 proof post per month</div>
+        </div>
+        <div class="funnel-step">
+          <div class="funnel-stage"><div class="funnel-stage-text">Stage 4<br>Conversion</div></div>
+          <div class="funnel-desc"><strong>Direct access drives subscriptions.</strong> Every edition announcement post must include a clean, frictionless CTA with a direct subscription link — not a link to the homepage. One click, one destination.</div>
+          <div class="funnel-tactic">Link in every edition post</div>
+        </div>
+        <div class="funnel-step">
+          <div class="funnel-stage"><div class="funnel-stage-text">Stage 5<br>Retention</div></div>
+          <div class="funnel-desc"><strong>Ongoing content justifies continued subscription.</strong> Subscribers who see consistent value on LinkedIn — between editions — remain subscribers. Community posts, behind-the-scenes, reader features all serve this function.</div>
+          <div class="funnel-tactic">Monthly community post</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Six Tactical Levers for Magazine Sales via LinkedIn</div>
+      <div class="sales-strategy">
+        <div class="sales-card">
+          <div class="sales-card-header">
+            <div class="sales-icon">A</div>
+            <div class="sales-card-title">Edition Teaser Posts</div>
+          </div>
+          <div class="sales-card-body">
+            <ul>
+              <li>Post one compelling data point or pull quote from the upcoming edition 5–7 days before release</li>
+              <li>Frame it as "here is what leaders in this sector will be reading next week"</li>
+              <li>End every teaser with a direct link to subscribe — not to the website homepage</li>
+              <li>Do this for every single edition, without exception. Consistency builds anticipation.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sales-card">
+          <div class="sales-card-header">
+            <div class="sales-icon">B</div>
+            <div class="sales-card-title">Cover Story as Content</div>
+          </div>
+          <div class="sales-card-body">
+            <ul>
+              <li>On edition release day, share the cover image with a 150-word editorial note explaining why this story matters right now</li>
+              <li>Tag the subject, the photographer, and the key brand mentioned — amplifies reach organically</li>
+              <li>Pin this post to the top of your company page for the month's duration</li>
+              <li>Invite followers to request a physical copy in the comments — creates direct buyer conversations</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sales-card">
+          <div class="sales-card-header">
+            <div class="sales-icon">C</div>
+            <div class="sales-card-title">Featured Article Extracts</div>
+          </div>
+          <div class="sales-card-body">
+            <ul>
+              <li>Mid-month, post a 200-word extract from one feature article — enough to establish value, not enough to replace the read</li>
+              <li>Stop the extract at a critical insight and write: "Continued in the [Month] print edition."</li>
+              <li>This is the single most effective sales tactic for print publications on LinkedIn</li>
+              <li>Choose the extract that speaks most directly to investors and decision-makers</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sales-card">
+          <div class="sales-card-header">
+            <div class="sales-icon">D</div>
+            <div class="sales-card-title">Gifting & Bulk Sales</div>
+          </div>
+          <div class="sales-card-body">
+            <ul>
+              <li>Post a quarterly "gifting offer" — hotel groups, hospitality brands, and consulting firms regularly gift industry publications to clients and staff</li>
+              <li>Frame it as: "Equip your leadership team with the intelligence they need — bulk subscription and gifting options available for [Month] edition"</li>
+              <li>Direct message warm followers who engage with your content regularly — personalised outreach converts significantly higher than public posts</li>
+              <li>Offer co-branded gift editions for corporate clients</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sales-card">
+          <div class="sales-card-header">
+            <div class="sales-icon">E</div>
+            <div class="sales-card-title">Subscriber Social Proof</div>
+          </div>
+          <div class="sales-card-body">
+            <ul>
+              <li>Once per quarter, post a subscriber highlight — a named leader, hotel group, or firm that subscribes, with their permission</li>
+              <li>"X hotel group subscribes to SOH across all their properties" — this is aspirational social proof that directly drives other operators to subscribe</li>
+              <li>Share reader feedback and responses to specific articles — proof that the content drives actual decisions</li>
+              <li>Include subscription milestone posts: 500 subscribers, 1,000 subscribers — each one is a sales event</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sales-card">
+          <div class="sales-card-header">
+            <div class="sales-icon">F</div>
+            <div class="sales-card-title">LinkedIn Newsletter — Digital Bridge</div>
+          </div>
+          <div class="sales-card-body">
+            <ul>
+              <li>Launch a LinkedIn Newsletter titled "SOH Intelligence Brief" — free, monthly, complementary to the print edition</li>
+              <li>Use it to share 3 key insights from the print edition in compressed form — enough to demonstrate value, not replace the magazine</li>
+              <li>Every issue ends with: "Read the full analysis in the print edition. Subscribe at [link]."</li>
+              <li>LinkedIn Newsletters notify all subscribers automatically — this is free, high-quality distribution to a warm audience</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Positioning the Magazine as a Status Object — Not Just a Read</div>
+      <div class="callout">
+        <div class="callout-text">Premium publications are not sold on content alone. They are sold on belonging. The reader who subscribes to SOH is signalling something about who they are and what they care about. Your messaging must reflect that.</div>
+        <div class="callout-attr">Magazine Positioning Strategy — SOH</div>
+      </div>
+      <table class="data-table">
+        <thead>
+          <tr><th>Positioning Angle</th><th>What to Communicate</th><th>Where to Use It</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>The Standard of the Industry</td>
+            <td>"The magazine that South Asia's top hoteliers keep on their desk." Frame SOH as the publication that serious operators read — not a general interest title.</td>
+            <td>About Section, Edition posts, gifting posts</td>
+          </tr>
+          <tr>
+            <td>The Intelligence Edge</td>
+            <td>"Subscribers knew about India's concert-travel phenomenon six months before it became a mainstream industry discussion." Position the magazine as early intelligence.</td>
+            <td>Teaser posts, conversion posts</td>
+          </tr>
+          <tr>
+            <td>The Access Signal</td>
+            <td>"Every month, SOH sits down with the people actually shaping hospitality in South Asia." Exclusive access to the interviews and conversations that matter.</td>
+            <td>Cover story posts, feature extracts</td>
+          </tr>
+          <tr>
+            <td>The Physical Artefact</td>
+            <td>In a digital world, a premium print edition is a deliberate choice. Photograph the physical magazine in contextually relevant environments — hotel lobbies, boardrooms, design studios.</td>
+            <td>Visual content, edition launches</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Monthly LinkedIn Content Calendar for Magazine Sales</div>
+      <table class="data-table">
+        <thead>
+          <tr><th>Week</th><th>Post Type</th><th>Sales Purpose</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Week 1 — Pre-Launch</td>
+            <td>Edition teaser: one insight, one data point, one strong visual. "What leaders are reading next week."</td>
+            <td>Build anticipation. Prime the audience for purchase decision.</td>
+          </tr>
+          <tr>
+            <td>Week 2 — Launch Week</td>
+            <td>Cover story launch post. Editorial note. Tag subjects. Pin to top of page. Direct subscribe link in post.</td>
+            <td>Primary conversion moment. Maximum visibility for maximum subscriptions.</td>
+          </tr>
+          <tr>
+            <td>Week 3 — Mid-Month</td>
+            <td>Feature extract: 200 words from the strongest article. Stop at the most valuable insight. "Continued in print."</td>
+            <td>Secondary conversion for anyone who missed launch week. Also re-engages existing subscribers.</td>
+          </tr>
+          <tr>
+            <td>Week 4 — Proof & Community</td>
+            <td>Subscriber spotlight, reader response, or circulation milestone. Reinforce the platform's value and reach.</td>
+            <td>Reduce churn among existing subscribers. Trigger FOMO for non-subscribers who see who's reading.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SUMMARY: ACTION MATRIX                -->
+  <!-- ═══════════════════════════════════════ -->
+  <section id="summary" class="section">
+    <div class="section-header">
+      <div class="section-num">06</div>
+      <div class="section-title-block">
+        <div class="section-kicker">Execution Plan</div>
+        <div class="section-title">Priority Action Matrix — What to Do & When</div>
+      </div>
+    </div>
+
+    <div class="matrix-grid">
+      <div>
+        <div class="matrix-col-label"><div class="matrix-col-dot"></div>Do This Week</div>
+        <div class="matrix-item"><strong>About Section</strong>Publish the rewritten About section. This is the highest-leverage single change available to you right now.</div>
+        <div class="matrix-item"><strong>Specialties Field</strong>Update with all 8 recommended keyword phrases. Immediate discoverability impact.</div>
+        <div class="matrix-item"><strong>Tagline</strong>Change to: "South Asia's Hospitality & Travel Intelligence Platform."</div>
+        <div class="matrix-item"><strong>Hashtag Set</strong>Define your 5 consistent hashtags. Apply to all future posts without variation.</div>
+        <div class="matrix-item"><strong>Subscribe Link</strong>Ensure your subscription link is in the About section and ready for edition posts.</div>
+      </div>
+      <div>
+        <div class="matrix-col-label"><div class="matrix-col-dot"></div>Do This Month</div>
+        <div class="matrix-item"><strong>Intelligence Brief Series</strong>Launch with Post 01 or 09 from the post ideas list. Set the tone for the new content positioning immediately.</div>
+        <div class="matrix-item"><strong>Edition Sales Post</strong>Apply the teaser + launch + extract framework to the very next edition release.</div>
+        <div class="matrix-item"><strong>LinkedIn Newsletter</strong>Launch "SOH Intelligence Brief" as a free monthly newsletter that bridges print to digital audience.</div>
+        <div class="matrix-item"><strong>Mission & Vision</strong>Update across website, print masthead, and all digital channels for consistency.</div>
+      </div>
+      <div>
+        <div class="matrix-col-label"><div class="matrix-col-dot"></div>Build Over 90 Days</div>
+        <div class="matrix-item"><strong>Content Pillar Rotation</strong>Establish a consistent weekly rhythm across all 5 content pillars. Authority compounds only through consistency.</div>
+        <div class="matrix-item"><strong>Subscriber Social Proof</strong>Collect and post the first subscriber spotlight — a named operator or hotel group.</div>
+        <div class="matrix-item"><strong>Proof Post</strong>Publish circulation and reach data as a credibility milestone. This is a sales post for partners and advertisers.</div>
+        <div class="matrix-item"><strong>Gifting Campaign</strong>Run the first bulk subscription / gifting post targeting hotel groups and consulting firms.</div>
+        <div class="matrix-item"><strong>Competitor Positioning</strong>Consistently reinforce the 3 messaging pivots across all About, post, and profile copy until the new positioning feels natural and owned.</div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-text">The goal is not more content. The goal is the right content, consistently positioned, that makes the right people say: "This is the publication serious operators read." Everything in this blueprint points toward that single outcome.</div>
+      <div class="callout-attr">Strategic North Star — SOH 2026</div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="doc-footer">
+  <div>SOH — <span>Soul of Hospitality</span></div>
+  <div>LinkedIn & Magazine Growth Blueprint · <span>2026</span> · Confidential</div>
+  <div>5 Parts · Full Strategic Audit</div>
+</footer>
+
+<script>
+  // Smooth scroll + active nav
+  document.querySelectorAll('.nav-item').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+
+  // Highlight active section on scroll
+  const sections = document.querySelectorAll('section[id]');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 120) current = s.getAttribute('id');
+    });
+    document.querySelectorAll('.nav-item').forEach(n => {
+      n.classList.toggle('active', n.getAttribute('href') === '#' + current);
+    });
+  });
+</script>
+</body>
+</html>
